@@ -25,3 +25,24 @@ Analysis question: The three question below will guide the future marketing prog
 1.	Which demographic segment (age group or gender) contributes the most to overall revenue, and how does their purchasing behavior differ from other segments?
 2.	How do seasonal variations in purchasing behavior differ across demographic segments, and what are the implications for marketing and sales strategies?
 3.	What impact do different payment methods have on conversion rates and revenue generation, and how can this information be leveraged to optimize the checkout experience?
+
+# Preparation
+
+### Data Sources 
+
+Data used is publicly available on Kaggle - [(Online Shop Customer Sales Data)](https://www.kaggle.com/datasets/onlineretailshop/online-shop-customer-sales-data/data)
+
+The datasets are appropriate and can be used to answer business questions. The data has been made available by Kaggle's user Jonas Ungermans. The datasets provided can offer valuable insights into customer demographics and behavior. They serve as a rich resource for exploring various aspects of customer profiles and their actions. 
+
+### Data Organization
+
+All information provided are within one csv. File has information about each sales with column for Customer_id, Age, Gender (0 = Male, 1 = Female), Revenue_Total, N_Purchases (Total Purchases by Customer), Purchase_DATE, Purchase_VALUE, Pay_Method (0 = Digital Wallet, 1 = Card, 2 = Paypal, 3 = Other), Time_Spent (Seconds), Browser (0 = Chrome, 1 = Safari, 2 = Edge, 3 = Other), Newsletter (0 = Not Subscribed, 1 = Subscribed), Voucher (0 = Not Used, 1 = Used). The dataset includes columns where numerical codes have been utilized to represent certain attributes. Explanations are provided within parentheses to clarify their actual meanings.
+
+# Process
+
+SSMS is being used to clean and update datasets. Tableau will be used for visualization.
+
+### Data Cleaning
+
+After exploring datasets, null values and duplicates identified and removed if there is any and is necessary to do so. Numerical codes were also replaced with their respective attributes. Lastly, a new column called Time_Spent_Conversion was added for conversion and proper formatting (00:00:00). [(Query)](https://github.com/hainguyendtx/Case-Study-Cyclistic-Bike-Share-How-Does-a-Bike-Share-Navigate-Speedy-Success/edit/main/Combining%20Data.sql)
+
