@@ -1,29 +1,13 @@
---- Checking for null values
+--- Replacing numbers in Gender to attributes (0 = Male, 1 = Female)
 
-SELECT *
-FROM dbo.eCommerce_customer_sales
-WHERE
-	Customer_id is NULL
-	OR Age is NULL
-	OR Gender is NULL
-	OR Revenue_Total is NULL
-	OR N_Purchases is NULL
-	OR Purchase_DATE is NULL
-	OR Purchase_VALUE is NULL
-	OR Pay_Method is NULL
-	OR Time_Spent is NULL
-	OR Browser is NULL
-	OR Newsletter is NULL
-	OR Voucher is NULL
+UPDATE dbo.eCommerce_customer_sales
+SET Gender = 
+	CASE
+		WHEN Gender = '0' then 'Male'
+		WHEN Gender = '1' then 'Female'
+	END;
 
---- Checking for duplicates
-
-SELECT *
-FROM dbo.eCommerce_customer_sales
-GROUP BY Customer_id, Age, Gender, Revenue_Total, N_Purchases, Purchase_DATE, Purchase_VALUE, Pay_Method, Time_Spent, Browser, Newsletter, Voucher
-HAVING COUNT(*) > 1;
-
---- Replacing numbers in Pay_Method to their name (0 = Digital Wallets, 1 = Card, 2 = Paypal, 3 = Other)
+--- Replacing numbers in Pay_Method to attributes (0 = Digital Wallets, 1 = Card, 2 = Paypal, 3 = Other)
 
 UPDATE dbo.eCommerce_customer_sales
 SET Pay_Method = 
@@ -35,7 +19,7 @@ SET Pay_Method =
 	END;
 
 
---- Replacing numbers in Browser to their name
+--- Replacing numbers in Browser to their attributes
 
 UPDATE dbo.eCommerce_customer_sales
 SET Browser =
