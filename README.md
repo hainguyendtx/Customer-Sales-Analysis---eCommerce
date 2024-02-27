@@ -42,7 +42,46 @@ All information provided are within one csv. File has information about each sal
 
 SSMS is being used to clean and update datasets. Tableau will be used for visualization.
 
-### Data Cleaning
+### Data Exploration
+Query - [Data Exploration](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/blob/main/Data%20Exploration.sql)  
+Prior to cleaning data, we will explore our data sets.   
 
-After exploring datasets, null values and duplicates identified and removed if there is any and is necessary to do so. Numerical codes were also replaced with their respective attributes. Lastly, a new column called Time_Spent_Conversion was added for conversion and proper formatting (00:00:00). [(Query)](https://github.com/hainguyendtx/Case-Study-Cyclistic-Bike-Share-How-Does-a-Bike-Share-Navigate-Speedy-Success/edit/main/Combining%20Data.sql)
+Observations:  
+1. Table below shows all column names and data types. The __Customer_id__ column is the primary key.  
+
+   ![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/a2e19bcf-30de-435b-9c96-773e53399fb9)
+
+    - __Time_Spent__ and __Purchase_DATE__ needs to be converted to their proper format. 
+
+2. Following table shows number of __null values__ in for each column.  
+   
+   ![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/0df30cda-0c05-48db-8649-b3afafeb0d36)
+
+   - No null values for this data set.
+
+3. Checking for duplicates by using __Customer_id__ column.    
+
+   ![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/e6c8dc48-34bc-4c3d-9aca-8c2c45e4ca90)
+
+   ![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/5f975e57-1173-470b-be06-ceca93941c74)
+
+   - There are no __duplicate__ rows for this data set.
+  
+4. __Customer_id__ column all has a length of 6, no need for cleaning
+  
+5. Column __Gender__, __Pay_Method__, __Browser__, __Newsletter__, __Voucher__, all has numerical representation for their attributes, need to replace with their attributes name.
+
+   ![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/d9acbc93-62db-4b43-b06d-b87c7c2031a2)
+
+   - Majority of data records are using Chrome browsers, aren't subscriber nor are they using voucher with twice as much females than there is male. 
+
+### Data Cleaning
+Query: [Data Cleaning](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/blob/main/Data%20Cleaning.sql)  
+1. __Time_Spent__ column is used to convert into time format by adding a new column named __Time_Spent_Converted__.
+2. __Purchase_DATE__ converted to YYYY-MM-DD format.
+3. All numerical representation are replaced with their appropriate attributes named.
+4. Added a new column called __Season__ by using __Purchase_DATE__. (January-Feb = Winter, March-May = Spring, June-August = Summer, September-November = Autumn) 
+
+![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/1f462e9d-9c86-42d0-be35-5e3ff397fd90)
+
 
