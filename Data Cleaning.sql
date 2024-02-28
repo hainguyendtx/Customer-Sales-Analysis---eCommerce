@@ -56,3 +56,36 @@ ADD Time_Spent_Converted TIME;
 UPDATE dbo.eCommerce_customer_sales
 SET Time_Spent_Converted = CONVERT(TIME, DATEADD(SECOND, Time_Spent, '00:00:00'));
 
+--- Converting Purchase_DATE format to YYYY-MM-DD format
+
+UPDATE dbo.eCommerce_customer_sales
+SET Purchase_DATE = CAST(CONVERT(DATETIME, Purchase_DATE, 3) AS DATE);
+
+--- Adding a Season column
+
+ALTER TABLE dbo.eCommerce_customer_sales
+ADD Season VARCHAR(20);
+
+UPDATE dbo.eCommerce_customer_sales
+SET Season =
+    CASE 
+        WHEN MONTH(Purchase_DATE) IN (3, 4, 5) THEN 'Spring'
+        WHEN MONTH(Purchase_DATE) IN (6, 7, 8) THEN 'Summer'
+        WHEN MONTH(Purchase_DATE) IN (9, 10, 11) THEN 'Autumn'
+        ELSE 'Winter'
+    END;
+
+--- Adding an Age_Group column
+
+ALTER TABLE dbo.eCommerce_customer_sales
+ADD Age_Group varchar(20);
+
+UPDATE dbo.eCommerce_customer_sales
+SET Age_Group =
+    CASE  
+		WHEN Age < 18 Then 'Teenagers'
+		WHEN Age BETWEEN 18 AND 24 THEN 'Young Adult'
+		WHEN Age BETWEEN 25 AND 39 THEN 'Adult'
+		WHEN Age BETWEEN 40 AND 59 THEN 'Middle-Aged'
+		ELSE 'Senior'
+	END; 
