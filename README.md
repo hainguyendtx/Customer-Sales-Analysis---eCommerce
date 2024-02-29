@@ -1,5 +1,6 @@
 # eCommerce Store
-How can an eCommerce store increase revenue?
+
+Sales analysis on an eCommerce Store
 
 By Hai Nguyen 
 
@@ -24,7 +25,7 @@ Analysis question: The three question below will guide the future marketing prog
 
 1.	Which demographic segment (age group or gender) contributes the most to overall revenue, and how does their purchasing behavior differ from other segments?
 2.	How do seasonal variations in purchasing behavior differ across demographic segments, and what are the implications for marketing and sales strategies?
-3.	What impact do different payment methods have on conversion rates and revenue generation, and how can this information be leveraged to optimize the checkout experience?
+3.	What impact do different payment methods have on revenue generation, and how can this information be leveraged to optimize the checkout experience?
 
 # Preparation
 
@@ -80,8 +81,19 @@ Query: [Data Cleaning](https://github.com/hainguyendtx/Customer-Sales-Analysis--
 1. __Time_Spent__ column is used to convert into time format by adding a new column named __Time_Spent_Converted__.
 2. __Purchase_DATE__ converted to YYYY-MM-DD format.
 3. All numerical representation are replaced with their appropriate attributes named.
-4. Added a new column called __Season__ by using __Purchase_DATE__. (January-Feb = Winter, March-May = Spring, June-August = Summer, September-November = Autumn) 
+4. Added a new column called __Season__ by using __Purchase_DATE__ for seasonal analysis. (January-Feb = Winter, March-May = Spring, June-August = Summer, September-November = Autumn)
+5. Added an Age_Group column for demographics analysis
 
 ![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/1f462e9d-9c86-42d0-be35-5e3ff397fd90)
+
+## Analyze and Share
+
+SQL Query: [Data Analysis](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/04.%20Data%20Analysis.sql)
+Data Analysis done in MSSQL and visualization is done through Tableau. 
+
+Which demographic segment (age group or gender) contributes the most to overall revenue, and how does their purchasing behavior differ from other segments?
+
+
+
 
 
