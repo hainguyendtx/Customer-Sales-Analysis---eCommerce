@@ -85,7 +85,7 @@ SQL Query: [Data Cleaning](https://github.com/hainguyendtx/Customer-Sales-Analys
 2. __Purchase_DATE__ converted to YYYY-MM-DD format.
 3. All numerical representation are replaced with their appropriate attributes named.
 4. Added a new column called __Season__ by using __Purchase_DATE__ for seasonal analysis. (January-Feb = Winter, March-May = Spring, June-August = Summer, September-November = Autumn)
-5. Added an Age_Group column for demographics analysis
+5. Added an __Age_Group__ column for demographics analysis
 
 ![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/1f462e9d-9c86-42d0-be35-5e3ff397fd90)
 
