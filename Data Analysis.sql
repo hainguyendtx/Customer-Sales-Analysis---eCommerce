@@ -5,18 +5,18 @@ FROM dbo.eCommerce_customer_sales
 GROUP BY Age_Group, Gender
 ORDER BY Revenue_Total DESC
 
---- Most used payment method 
+--- Most used payment method by Gender
 
-SELECT Pay_Method, COUNT(Pay_Method) as Total
+SELECT Pay_Method, Gender, COUNT(Pay_Method) as Total
 FROM dbo.eCommerce_customer_sales
-GROUP BY Pay_Method
+GROUP BY Pay_Method, Gender
 ORDER BY Total DESC
 
---- Most used browser 
+--- Most used browser by Gender
 
-SELECT Browser, COUNT(Browser) as Total
+SELECT Browser, Gender, COUNT(Browser) as Total
 FROM dbo.eCommerce_customer_sales
-GROUP BY Browser
+GROUP BY Browser, Gender
 ORDER BY Total DESC
 
 --- Average Number of Purchases By Gender (N_Purchases)
@@ -57,6 +57,13 @@ SELECT Season, Gender, SUM(Revenue_Total) as Revenue_Total
 FROM dbo.eCommerce_customer_sales
 GROUP By Season, Gender
 ORDER BY Gender, Revenue_Total
+
+--- Revenue Total by Payment Method 
+
+SELECT Pay_Method, SUM(Revenue_Total) as Revenue_Total
+FROM dbo.eCommerce_customer_sales
+GROUP By Pay_Method
+ORDER BY Revenue_Total DESC
 
 --- Revenue Total by Payment Method & Gender
 
