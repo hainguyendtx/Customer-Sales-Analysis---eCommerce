@@ -16,15 +16,17 @@ Throughout the study, we highlight how our client utilized advanced analytics to
 
 •	Payment Service Providers: Ensuring smooth and secure payment processing is essential for minimizing cart abandonment and maximizing revenue conversion.
 
-• Customers: Understanding customer behavior and preferences is crucial for driving revenue growth. Customers are key stakeholders as their purchasing decisions directly impact revenue generation.
+•  Customers: Understanding customer behavior and preferences is crucial for driving revenue growth. Customers are key stakeholders as their purchasing decisions directly impact revenue generation.
+
+•  Sales Team: Play a pivotal role in driving revenue and maintaining customer relationships, and the executive leadership, who oversee strategic decision-making and set the overall direction of the organization.
 
 # Ask
-Business task: Implement a comprehensive sales and marketing strategy to increase revenue and drive sales growth.
+Business task: Implement a comprehensive sales and marketing strategy to increase revenue and drive sales growth, and to unlock sales insights that are not visible before for sales team for decision support. 
 
 Analysis question: The three question below will guide the future marketing program.
 
 1.	Which demographic segment (age group or gender) contributes the most to overall revenue, and how does their purchasing behavior differ from other segments?
-2.	How do seasonal variations in purchasing behavior differ across demographic segments, and what are the implications for marketing and sales strategies?
+2. How do seasonal fluctuations affect revenue generation across demographic segments, and what implications do they have for marketing and sales strategies?
 3.	What impact do different payment methods have on revenue generation, and how can this information be leveraged to optimize the checkout experience?
 
 # Preparation
@@ -91,7 +93,21 @@ Query: [Data Cleaning](https://github.com/hainguyendtx/Customer-Sales-Analysis--
 SQL Query: [Data Analysis](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/04.%20Data%20Analysis.sql)
 Data Analysis done in MSSQL and visualization is done through Tableau. 
 
-Which demographic segment (age group or gender) contributes the most to overall revenue, and how does their purchasing behavior differ from other segments?
+First we'll look at which demographic segment (age group and gender) contributes the most to overall revenue?
+
+![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/e65f5e59-24c7-4b85-9621-3d5cf4213724)
+
+- Across all age groups, there are twice as many females as there are males. The clientele and revenue generation from clientele predominantly comprised of middle-aged adults (40-59). Following Middle-Aged adults, Adults aged 25-39 constitute the second-largest demographic. Young Adults (18-24) are also part of the customer base, ranking third in terms of revenue contribution. Seniors (60+) represent the fourth largest group, while Teenagers (16-18) make up a much smaller portion of the customer base.
+
+Next, we'll look at how their purchasing behaviors.
+
+![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/ceeb2da6-ce22-409d-88eb-9a9db4679c6c)
+
+- The purchasing behaviors across different gender demographics show almost identical patterns, with minimal differences observed. Whether it pertains to the choice of payment method, web browser preferences, subscription status, or voucher usage, the distinctions are negligible. Notably, our customer base predominantly utilizes Chrome browsers, accounting for approximately 64% of users, followed by Safari, while other browsers like Edge are the least preferred with around 5% of users, with the rest using other browsers. In terms of payment methods, around 30% of customers opt for cards, with digital wallets and PayPal each constituting roughly 29% of transactions, while the remainder utilizes other payment methods.
+
+
+
+
 
 
 
