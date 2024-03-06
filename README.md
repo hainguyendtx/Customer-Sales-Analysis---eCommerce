@@ -93,20 +93,37 @@ Query: [Data Cleaning](https://github.com/hainguyendtx/Customer-Sales-Analysis--
 SQL Query: [Data Analysis](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/04.%20Data%20Analysis.sql)
 Data Analysis done in MSSQL and visualization is done through Tableau. 
 
-First we'll look at which demographic segment (age group and gender) contributes the most to overall revenue?
+1. First we'll look at which demographic segment (age group and gender) contributes the most to overall revenue. 
 
 ![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/e65f5e59-24c7-4b85-9621-3d5cf4213724)
 
-- Across all age groups, there are twice as many females as there are males. The clientele and revenue generation from clientele predominantly comprised of middle-aged adults (40-59). Following Middle-Aged adults, Adults aged 25-39 constitute the second-largest demographic. Young Adults (18-24) are also part of the customer base, ranking third in terms of revenue contribution. Seniors (60+) represent the fourth largest group, while Teenagers (16-18) make up a much smaller portion of the customer base.
+- Insights
 
-Next, we'll look at how their purchasing behaviors.
+   - Across all age groups, there are twice as many females as there are males. The clientele and revenue generation from clientele predominantly comprised of middle-aged adults (40-59). Following Middle-Aged adults, Adults aged 25-39 constitute the second-largest demographic. Young Adults (18-24) are also part of the customer base, ranking third in terms of revenue contribution. Seniors (60+) represent the fourth largest group, while Teenagers (16-18) make up a much smaller portion of the customer base.
+
+2. Next, we'll look at how their purchasing behaviors to see the differences between demographics. 
 
 ![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/ceeb2da6-ce22-409d-88eb-9a9db4679c6c)
 
-- The purchasing behaviors across different gender demographics show almost identical patterns, with minimal differences observed. Whether it pertains to the choice of payment method, web browser preferences, subscription status, or voucher usage, the distinctions are negligible. Notably, our customer base predominantly utilizes Chrome browsers, accounting for approximately 64% of users, followed by Safari, while other browsers like Edge are the least preferred with around 5% of users, with the rest using other browsers. In terms of payment methods, around 30% of customers opt for cards, with digital wallets and PayPal each constituting roughly 29% of transactions, while the remainder utilizes other payment methods.
+- Insights
 
+   - The purchasing behaviors across different gender demographics show almost identical patterns, with minimal differences observed. Whether it pertains to the choice of payment method, web browser preferences, subscription status, or voucher usage, the distinctions are negligible. Notably, our customer base predominantly utilizes Chrome browsers, accounting for approximately 64% of users, followed by Safari, while other browsers like Edge are the least preferred with around 5% of users, with the rest using other browsers. In terms of payment methods, around 30% of customers opt for cards, with digital wallets and PayPal each constituting roughly 29% of transactions, while the remainder utilizes other payment methods.
 
+3. For this part, we'll look revenue generation per season for each gender to analyze possible implications they have for marketing and sales strategies. 
 
+![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/4aa44ba1-4cf3-4cfb-878a-fe46085cff90)
+
+- Insights
+
+   - There's minimal variance in revenue generation between each season, typically fluctuating only within a range of $1000 to $5000. However, a subtle trend emerges: revenue generation among males peaks during autumn and is the lowest during winter, while for females, the pattern is reversed, with highest revenue during winter and lowest during autumn. As for spring and summer, they're almost the same, only fluctuating within a range of $400 to $1000 for both gender.
+
+4. Last, we'll look at revenue generation for each payment method to determine a possible ways to optimize the checkout process.
+
+![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/105e74fa-d58f-4e5f-9a94-71084f1d5794) 
+
+- Insights
+
+   - 
 
 
 
