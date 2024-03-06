@@ -21,7 +21,7 @@ Throughout the study, we highlight how our client utilized advanced analytics to
 •  Sales Team: Play a pivotal role in driving revenue and maintaining customer relationships, and the executive leadership, who oversee strategic decision-making and set the overall direction of the organization.
 
 # Ask
-Business task: Implement a comprehensive sales and marketing strategy to increase revenue and drive sales growth, and to unlock sales insights that are not visible before for sales team for decision support. 
+Business task: Implement a comprehensive sales and marketing strategy to increase revenue and drive sales growth, and to unlock sales insights that are not visible before for sales team for decision support via a sales dashboard. 
 
 Analysis question: The three question below will guide the future marketing program.
 
@@ -46,7 +46,8 @@ All information provided are within one csv. File has information about each sal
 SSMS is being used to clean and update datasets. Tableau will be used for visualization.
 
 ### Data Exploration
-Query - [Data Exploration](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/blob/main/Data%20Exploration.sql)  
+SQL Query - [Data Exploration](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/blob/main/Data%20Exploration.sql)  
+
 Prior to cleaning data, we will explore our data sets.   
 
 Observations:  
@@ -79,7 +80,7 @@ Observations:
    - Majority of data records are using Chrome browsers, aren't subscriber nor are they using voucher with twice as much females than there is male. 
 
 ### Data Cleaning
-Query: [Data Cleaning](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/blob/main/Data%20Cleaning.sql)  
+SQL Query: [Data Cleaning](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/blob/main/Data%20Cleaning.sql)  
 1. __Time_Spent__ column is used to convert into time format by adding a new column named __Time_Spent_Converted__.
 2. __Purchase_DATE__ converted to YYYY-MM-DD format.
 3. All numerical representation are replaced with their appropriate attributes named.
@@ -91,7 +92,8 @@ Query: [Data Cleaning](https://github.com/hainguyendtx/Customer-Sales-Analysis--
 ## Analyze and Share
 
 SQL Query: [Data Analysis](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/04.%20Data%20Analysis.sql)
-Data Analysis done in MSSQL and visualization is done through Tableau. 
+
+SSMS used for analysis and Tableau used for visualizations and final dashboard. 
 
 1. First we'll look at which demographic segment (age group and gender) contributes the most to overall revenue. 
 
@@ -123,9 +125,36 @@ Data Analysis done in MSSQL and visualization is done through Tableau.
 
 - Insights
 
-   - 
+   - Approximately 60% of our revenue stems from transactions made through card and digital wallets, with PayPal accounting for around 22%. The remaining revenue comes from various other payment methods.
 
+5. This is our final sales dashboard created by using Tableau. Below is an attached link, as well as a screenshot. 
 
+      [Tableau Dashboard](https://public.tableau.com/app/profile/hai.nguyen5185/viz/Sales_17091861646070/Dashboard1)
+
+![image](https://github.com/hainguyendtx/Customer-Sales-Analysis---eCommerce/assets/157367308/be358a33-72b4-4ed1-b7e9-6a633d09869a)
+
+### Key Findings
+
+- Demographics: Female customers outnumber males across all age groups by twice as much, with middle-aged adults being the largest demographic.
+- Purchasing Behavior: Both genders exhibit similar preferences in payment methods, web browsers, subscriptions, and voucher usage.
+- Browser & Payment Method Preferences: Chrome is the top browser choice, and card/digital wallets dominate payment methods.
+- Seasonal Revenue Trends: Minimal revenue variation between seasons, with males peaking in autumn and females in winter and vice versa.
+- Revenue Distribution: Card/digital wallets contribute to 60% of revenue, followed by PayPal at 22%, and the rest used other methods.
+
+# Act
+
+### Recommendation
+- Develop targeted marketing campaigns that resonate with the predominant demographics, especially middle-aged adults and females. Tailor messaging and promotions to appeal to their interests and preferences.
+- Given the preference for Chrome as the primary web browser, ensure that the company's website is optimized for Chrome users. Improve user experience, website speed, and accessibility to maximize conversion rates.
+- Since card and digital wallets contribute significantly to revenue, incentivize customers to use these payment methods by offering discounts, cashback, or loyalty rewards.
+- While card and digital wallets are popular, consider expanding payment options to cater to a wider range of customer preferences. Explore partnerships with emerging payment platforms or offer alternative payment methods to attract more customers.
+  
+### Addtional Things to Consider for Future Exploration
+- Collect data of product category to identify potential niche markets or segments within the existing customer base that could be targeted for growth opportunities.
+- Collect data on competitors' pricing strategies, product offerings, promotional activities, and customer feedback to benchmark performance and identify areas for differentiation or improvement.
+- Monitor usage patterns of different technology devices to optimize website compatibility, user experience, and marketing channel effectiveness.
+- Implement surveys, feedback forms, or customer satisfaction ratings to gather qualitative insights and feedback directly from customers regarding their experiences, preferences, and areas for improvement.
+- Gather location information to understand the whether the location plays a factor in order to tailor marketing strategies accordingly.
 
 
 
